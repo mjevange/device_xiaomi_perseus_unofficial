@@ -87,5 +87,5 @@ PRODUCT_COPY_FILES += \
 
 # Slider settings and Secure element
 PRODUCT_PACKAGES += \
-    DeviceSettings
+    DeviceSettings \
     SecureElement
