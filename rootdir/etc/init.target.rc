@@ -27,6 +27,10 @@
 #
 #
 
+on init
+    write /sys/class/leds/ir/max_brightness 63
+    write /sys/class/leds/white/max_brightness 9
+
 on fs
     chmod 644 /mnt/vendor/persist/audio/us_manual_cal
     chmod 644 /persist/audio/us_manual_cal
