@@ -10,7 +10,7 @@ $(call inherit-product, device/xiaomi/perseus/device.mk)
 $(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := rr_perseus
+PRODUCT_NAME := potato_perseus
 PRODUCT_DEVICE := perseus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 3
