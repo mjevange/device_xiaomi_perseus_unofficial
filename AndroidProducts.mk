@@ -6,3 +6,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/rr_perseus.mk
+
+COMMON_LUNCH_CHOICES := \
+    rr_perseus-user \
+    rr_perseus-userdebug \
+    rr_perseus-eng
