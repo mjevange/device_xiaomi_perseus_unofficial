@@ -12,15 +12,17 @@ DEVICE_PATH := device/xiaomi/perseus
 # Assert
 TARGET_OTA_ASSERT_DEVICE := perseus
 
+# Camera
+TARGET_FACE_UNLOCK_CAMERA_ID := 5
 
 # Display
 TARGET_HAS_HDR_DISPLAY := true
 TARGET_HAS_WIDE_COLOR_DISPLAY := true
 TARGET_USES_COLOR_METADATA := true
+TARGET_USES_DRM_PP := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := perseus_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/perseus
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
