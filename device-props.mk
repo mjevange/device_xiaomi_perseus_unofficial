@@ -4,12 +4,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.remosaic.trigeriso=250 \
     persist.camera.sat.fallback.dist=45 \
     persist.camera.sat.fallback.dist.d=5 \
-    persist.camera.sat.fallback.luxindex=310 \
-    persist.camera.sat.fallback.lux.d=50 \
-    persist.camera.saf.stablecnt=3
+    persist.camera.sat.fallback.luxindex=405 \
+    persist.camera.sat.fallback.lux.d=20
+
+# Display
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.has_wide_color_display=true
 
 # Display density
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -23,11 +25,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.fp.fpc=true \
     ro.hardware.fp.goodix=true
-
-# GNSS
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.flp=brcm \
-    ro.hardware.gps=brcm
 
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
