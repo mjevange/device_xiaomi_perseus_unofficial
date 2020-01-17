@@ -13,13 +13,10 @@ $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 PRODUCT_NAME := aosip_perseus
 PRODUCT_DEVICE := perseus
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI MIX 3
+PRODUCT_MODEL := Mi Mix 3
 PRODUCT_MANUFACTURER := Xiaomi
 
 BUILD_FINGERPRINT := "Xiaomi/perseus/perseus:9/PKQ1.180729.001/V10.3.1.0.PEEMIXM:user/release-keys"
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=Xiaomi/perseus/perseus:9/PKQ1.180729.001/V10.3.1.0.PEEMIXM:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="perseus-user 9 PKQ1.180729.001 V10.3.1.0.PEEMIXM release-key" \
