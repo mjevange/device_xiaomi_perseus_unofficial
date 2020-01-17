@@ -15,6 +15,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosip_perseus.mk
-
-COMMON_LUNCH_CHOICES := \
-    aosip_perseus-userdebug
