@@ -24,3 +24,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="perseus"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT) \
+    ro.build.description=$(PRIVATE_BUILD_DESC) \
+    ro.build.display.id=$(PRIVATE_BUILD_DESC)
