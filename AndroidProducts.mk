@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_perseus.mk
+    $(LOCAL_DIR)/lineage_perseus.mk
 
 COMMON_LUNCH_CHOICES := \
-    potato_perseus-user \
-    potato_perseus-userdebug \
-    potato_perseus-eng
+    lineage_perseus-user \
+    lineage_perseus-userdebug \
+    lineage_perseus-eng
