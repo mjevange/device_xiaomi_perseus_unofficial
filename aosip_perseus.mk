@@ -17,6 +17,7 @@ PRODUCT_MODEL := Mi Mix 3
 PRODUCT_MANUFACTURER := Xiaomi
 
 BUILD_FINGERPRINT := "Xiaomi/perseus/perseus:9/PKQ1.180729.001/V10.3.1.0.PEEMIXM:user/release-keys"
+BUILD_DESC := "perseus-user 9 PKQ1.180729.001 V10.3.1.0.PEEMIXM release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="perseus-user 9 PKQ1.180729.001 V10.3.1.0.PEEMIXM release-keys" \
@@ -25,7 +26,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT) \
-    ro.build.description=$(PRIVATE_BUILD_DESC) \
-    ro.build.display.id=$(PRIVATE_BUILD_DESC)
+    ro.build.description=$(BUILD_DESC) \
+    ro.build.display.id=$(BUILD_DESC)
